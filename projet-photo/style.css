@@ -1,16 +1,66 @@
 p{
     text-align: justify;
     text-justify: inter-word;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 }
+
+h1 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
 .my-nav{
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 999;
     background: none;
     background-color: rgba(0, 0, 0, 0.5);
     border: 0;
     border-radius: 0;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -18,7 +68,7 @@ p{
 }
 
 .name_photograph {
-    font-family: Poiret One;
+    font-family: "Poiret One", sans-serif;
     font-weight: bold;
     font-size: 26px;
     text-transform: uppercase;
@@ -52,23 +102,77 @@ p{
     padding: 4px;
 }
 
-.txt_aboutme {
-    font-family: Source Sans Pro;
+
+#footer{
+    background-color: black;
+    width: 100vw;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.txt_copyright{
+    text-align: right;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+}
+
+.name_footer{
+    font-family: "Poiret One", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.date {
+    text-align: right;
+}
+
+/*
+#AboutMe{
+    height: 100vh;
+}*/
+
+.content_aboutme {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.img_photograph {
+
+}
+
+.hr_homepage{
+    height: 1px;
+    background-color: black;
+    border: none;
+    width: 100%;
+}
+
+#contact {
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 15px;
 }
 
-#footer{
-    background-color: darkgray;
-    padding: 10px;
+
+#project {
+    padding-top: 80px;
 }
 
-.copyright{
-    text-align: right;
+.margin_article {
+    margin-top: 5vmin;
 }
 
-.txt_copyright{
-    text-align: right;
+.img_project {
+    width: 100%;
 }
 
 /*network*/
