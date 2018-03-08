@@ -10,6 +10,18 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
     border: 0;
     border-radius: 0;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /*font-weight: bold;*/
+}
+
+.name_photograph {
+    font-family: Poiret One;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .my-carousel{
@@ -40,6 +52,12 @@ p{
     padding: 4px;
 }
 
+.txt_aboutme {
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-size: 15px;
+}
+
 #footer{
     background-color: darkgray;
     padding: 10px;
@@ -53,8 +71,6 @@ p{
     text-align: right;
 }
 
-.btn_align{
-}
 /*network*/
 
 
