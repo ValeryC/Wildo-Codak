@@ -1,3 +1,10 @@
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+
 p{
     text-align: justify;
     text-justify: inter-word;
@@ -77,7 +84,78 @@ a:visited {
 .my-carousel{
     background-attachment: fixed;
 }
-
+.carousel-inner > .item {
+    position: relative;
+    -webkit-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+           
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    line-height: 1;
+  }
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item {
+      -webkit-transition-property: -webkit-transform opacity;
+           -o-transition-property:      -o-transform opacity;
+              transition-property:         transform opacity;
+  
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+    }
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+      opacity: 1;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+    }
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+      opacity: 1;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+    }
+    .carousel-inner > .item.next.left,
+    .carousel-inner > .item.prev.right,
+    .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel-inner > .active,
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    display: block;
+  }
+  .carousel-inner > .active {
+    opacity: 1;
+  }
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .carousel-inner > .next {
+    opacity: 0;
+  }
+  .carousel-inner > .prev {
+    opacity: 0;
+  }
+  .carousel-inner > .next.left,
+  .carousel-inner > .prev.right {
+    opacity: 0;
+  }
+  .carousel-inner > .active.left {
+    opacity: 1;
+  }
+  .carousel-inner > .active.right {
+    opacity: 1;
+  }
 .my-nav .navbar-nav a{
     color: white !important;
 }
@@ -88,6 +166,7 @@ a:visited {
 .my-nav:hover{
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 
 .thumbnail.right-caption > img {
     float: left;
@@ -102,7 +181,6 @@ a:visited {
     padding: 4px;
 }
 
-
 #footer{
     background-color: black;
     width: 100vw;
@@ -110,8 +188,7 @@ a:visited {
     font-family: "Poiret One", sans-serif;
     font-size: 12px;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px;
 }
 
 
@@ -146,6 +223,7 @@ a:visited {
 }
 
 .img_photograph {
+    width: 100%;
 
 }
 
@@ -167,6 +245,10 @@ a:visited {
     padding-top: 80px;
 }
 
+#portfolio {
+    padding-top: 80px;
+}
+
 .margin_article {
     margin-top: 5vmin;
 }
@@ -177,4 +259,58 @@ a:visited {
 
 /*network*/
 
+.btn {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white; 
+    border: 1px solid black;
+    border-radius: 0px;
+    color: black;
+    transition-duration: 0.3s;
+    width: 140px;
+    height: 40px;
+}
 
+    .btn:hover {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+
+.form-control {
+    border-radius: 0px;
+    border-color: black;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.text-muted {
+    padding-left: 7px;
+}
+
+.portfolio-nav > li > a {
+    font-size: 20px;
+    color: #000000 !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    text-transform: uppercase;
+}
+
+.portfolio-nav > li > a:hover {
+    box-shadow: inset 0 0 0 white, inset 0 -3px 0 #000000;
+}
+.nav-link-active {
+    background: lightgray !important;
+    box-shadow: inset 0 0 0 white, inset 0 -3px 0 #000000;
+}
+.portfolioProject1{
+    width: 100%;
+    height: 50px;
+}
+
+.img-gal {
+    height: 300px;
+    width: 400px;
+    padding: 30px 30px 20px;
+}
