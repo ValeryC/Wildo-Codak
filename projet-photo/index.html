@@ -57,9 +57,15 @@
                             </li>
                             <li>
                                 <div class="block_icons">
-                                    <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square icons"></i></a>
-                                    <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram icons"></i></a>
-                                    <a href="http://flickr.com" target="_blank"><i class="fab fa-flickr icons"></i></a>
+                                    <a href="http://facebook.com" target="_blank">
+                                        <i class="fab fa-facebook-square icons"></i>
+                                    </a>
+                                    <a href="http://instagram.com" target="_blank">
+                                        <i class="fab fa-instagram icons"></i>
+                                    </a>
+                                    <a href="http://flickr.com" target="_blank">
+                                        <i class="fab fa-flickr icons"></i>
+                                    </a>
                                 </div>
                             </li>
 
@@ -97,13 +103,8 @@
         </a>
     </div>
 
-    <section id="AboutMe" class="content_aboutme">
+    <section id="AboutMe" class="content_sectionAboutMe">
         <div class="container">
-            <!--<div class="row">
-        <div class="col-12">
-            <h1> Wildo Codak</h1><br/>
-        </div>
-    </div>-->
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
                     <img class="img_photograph" src="images/kodacwildo.jpeg" alt="w">
@@ -128,84 +129,90 @@
             </div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-    <section id="contact">
-        <!--Formulaire de contact-->
-        <form method="post" action="contact.php" role="form">
-
-            <!--<div class="messages"></div>-->
-
-            <div class="controls">
+    <section id="contact" class="content_sectionContact">
+        <div class="container">
+            <div class="row">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                            <hr class="hr_homepage">
-                        </div>
-                    </div>
-                    <div class="row" align="center">
-                        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                            <h1>Contact</h1>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                            <div class="form-group">
-                                <!--<label for="form_name">Name *</label>-->
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Your name*" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                        <!--Formulaire de contact-->
+                        <form method="post" action="contact.php" role="form">
+                            <div class="controls">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <hr class="hr_homepage">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                            <div class="form-group">
-                                <!--<label for="form_email">Email *</label>-->
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Your email*" required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="row" align="center">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <h1>Contact</h1>
+                                    <br>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                            <div class="form-group">
-                                <!--<label for="form_message">Message *</label>-->
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Your message*" rows="4" required="required"
-                                    data-error="Please,leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <div class="form-group">
+                                        <!--<label for="form_name">Name *</label>-->
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Your name*" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                                <span class="text-muted">*These fields are required.</span>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <div class="form-group">
+                                        <!--<label for="form_email">Email *</label>-->
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Your email*" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12" align="center">
-                                <br>
-                                <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                <br>
-                                <br>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <div class="form-group">
+                                        <!--<label for="form_message">Message *</label>-->
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your message*" rows="4" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                                    <span class="text-muted">*These fields are required.</span>
+                                </div>
+                                <div class="col-md-12" align="center">
+                                    <br>
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
+
 
     <!--Footer-->
 
-    <div id="footer" class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-xs-6" class="author">
-                <span class="name_footer">Wildo Codak</span>
-            </div>
-            <div class="col-xs-6 col-md-6 col-lg-6 txt_copyright">
-                <span>©All rights reserved WC 2018</span>
-            </div>
-        </div>
-    </div>
-
+    <footer>
+            <div id="footer" class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-6" class="author">
+                        <span class="name_footer">Wildo Codak</span>
+                    </div>
+                    <div class="col-xs-6 col-md-6 col-lg-6 txt_copyright">
+                        <span>©All rights reserved WC 2018</span>
+                    </div>
+                </div>
+    </footer>
     <!-- jQuery C   DN -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
