@@ -83,7 +83,11 @@ a:visited {
 
 .my-carousel{
     background-attachment: fixed;
+    /*position: fixed;
+    width: 100vw;
+    height: 100vh;*/
 }
+
 .carousel-inner > .item {
     position: relative;
     -webkit-transition-property: opacity;
@@ -94,6 +98,8 @@ a:visited {
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
     line-height: 1;
+    width: 100vw;
+    height: auto;;
   }
   @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner > .item {
@@ -212,12 +218,11 @@ a:visited {
     text-align: right;
 }
 
-/*
-#AboutMe{
-    height: 100vh;
-}*/
 
 .content_aboutme {
+    /*background-color: white;
+    width: 100vw;
+    height: 100vh;*/
     padding-top: 60px;
     padding-bottom: 20px;
 }
@@ -309,8 +314,279 @@ a:visited {
     height: 50px;
 }
 
-.img-gal {
+/*.img-gal {
     height: 300px;
     width: 400px;
     padding: 30px 30px 20px;
+}*/
+
+
+.block_icons {
+    display: inline;
 }
+
+.icons {
+    position: relative;
+    color: white;
+    font-size: 23px;
+    margin: 3px;
+}
+
+
+
+
+
+/* PORTFOLIO */
+
+.col_param {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ONGLET MONUMENTS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .img_portfolio1 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio2 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio3 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio4 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio5 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio6 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio7 {
+        max-width: 98%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    } 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+    .img_portfolio1 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio2 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio3 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio4 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio5 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio6 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    
+    .img_portfolio7 {
+        max-width: 99%;
+        height: auto;
+        margin: 4px;
+        display: block;
+    }
+    } 
+
+/* Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+
+
+    .img_portfolio1 {
+        width: auto;
+        height: 239px;
+        margin: 4px;
+    }
+    
+    .img_portfolio2 {
+        width: auto;
+        height: 239px;
+        margin: 4px;
+    }
+    
+    .img_portfolio3 {
+        width: auto;
+        height: 375px;
+        margin: 4px;
+    }
+    
+    .img_portfolio4 {
+        width: auto;
+        height: 375px;
+        margin: 4px;
+    }
+    
+    .img_portfolio5 {
+        width: auto;
+        height: 412px;
+        margin: 4px;
+    }
+    
+    .img_portfolio6 {
+        width: auto;
+        height: 412px;
+        margin: 4px;
+    }
+    
+    .img_portfolio7 {
+        width: auto;
+        height: 444px;
+        margin: 4px;
+    }
+    }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .img_portfolio1 {
+        width: auto;
+        height: 314px;
+        margin: 4px;
+    }
+    
+    .img_portfolio2 {
+        width: auto;
+        height: 314px;
+        margin: 4px;
+    }
+    
+    .img_portfolio3 {
+        width: auto;
+        height: 355px;
+        margin: 4px;
+    }
+    
+    .img_portfolio4 {
+        width: auto;
+        height: 354px;
+        margin: 4px;
+    }
+    
+    .img_portfolio5 {
+        width: auto;
+        height: 355px;
+        margin: 4px;
+    }
+    
+    .img_portfolio6 {
+        width: auto;
+        height: 354px;
+        margin: 4px;
+    }
+    
+    .img_portfolio7 {
+        width: auto;
+        height: 354px;
+        margin: 4px;
+    }
+    }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .img_portfolio1 {
+        width: auto;
+        height: 382px;
+        margin: 4px;
+    }
+
+    .img_portfolio2 {
+        width: auto;
+        height: 382px;
+        margin: 4px;
+    }
+
+    .img_portfolio3 {
+        width: auto;
+        height: 432px;
+        margin: 4px;
+    }
+
+    .img_portfolio4 {
+        width: auto;
+        height: 432px;
+        margin: 4px;
+    }
+
+    .img_portfolio5 {
+        width: auto;
+        height: 433px;
+        margin: 4px;
+    }
+
+    .img_portfolio6 {
+        width: auto;
+        height: 431px;
+        margin: 4px;
+    }
+
+    .img_portfolio7 {
+        width: auto;
+        height: 431px;
+        margin: 4px;
+    }
+    }
