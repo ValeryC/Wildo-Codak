@@ -190,10 +190,10 @@ a:visited {
     padding: 4px;
 }
 
-footer{
-    position: absolute;
+.footer {
     background-color: black;
-    width: 100%;
+    width: 100vw;
+    height: auto;
     color: white;
     font-family: "Poiret One", sans-serif;
     font-size: 12px;
@@ -223,30 +223,32 @@ footer{
     text-align: right;
 }
 
-.content_sectionContact {
-    position: relative;
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    top: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 10vh;
-    margin: 0px;
+
+.content_section {
+    padding-top: 100vh;
 }
 
 .content_sectionAboutMe {
-    position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     width: 100vw;
     height: 100vh;
-    top: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 2vh;
     margin: 0px;
 }
 
+
+.content_sectionContact {
+
+    background-color:white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    margin: 0px;
+}
 
 
 .img_photograph {
@@ -363,14 +365,16 @@ footer{
 
 
 .block_icons {
-    display: inline;
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .icons {
     position: relative;
     color: white;
     font-size: 23px;
-    margin: 3px;
+    margin: 7px;
 }
 
 
