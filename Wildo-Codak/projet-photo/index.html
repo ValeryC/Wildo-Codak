@@ -8,6 +8,8 @@
     <title>Wildo Codak</title>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Source+Sans+Pro:300,400" rel="stylesheet">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,17 +25,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Wildo Kodac</a>
+            <a class="navbar-brand name_photograph" href="#">Wildo CodaK</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"> Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#AboutMe">About me</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html"> Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#AboutMe">About me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -64,45 +66,45 @@
     </a>
 </div>
 
-<div id="AboutMe" class="container">
-    <div class="row">
+<section id="AboutMe" class="content_aboutme">
+<div class="container">
+    <!--<div class="row">
         <div class="col-12">
             <h1> Wildo Codak</h1><br/>
         </div>
-
-        <div class="col-xs-12 col-md-6">
-            <img src="images/kodacwildo.jpeg" alt="w">
+    </div>-->
+    <div class="row">
+        <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+            <img class="img_photograph" src="images/kodacwildo.jpeg" alt="w">
         </div>
-        <div class="col-xs-12 col-md-6">
-            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
-                impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un
-                peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de
-                texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique,
-                sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de
-                feuilles Letraset contenant des passages du Lorem Ipsum, et plus récemment, par son inclusion dans des
-                applications de mise en page de texte, comme Aldus PageMaker.
-                Pourquoi l'utiliser On sait depuis longtemps que travailler avec du texte lisible et contenant du sens
-                est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du
-                Lorem Ipsum sur un texte générique comme ' Du texte. Du texte. Du texte.' est qu'il possède une
-                distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français
-                standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem
-                Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux
-                sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le
-                temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil
+        <div class="col-xs-12 col-md-7 col-lg-7">
+            <p class="txt_aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis arcu turpis, vitae laoreet arcu ultricies quis. Suspendisse mollis nulla a neque accumsan, ut sagittis elit egestas. Donec in libero sed ante facilisis dignissim. Proin quis justo sed leo rhoncus ornare. Etiam id ipsum mauris. Duis ut massa molestie, sagittis leo id, ultrices lorem. Suspendisse accumsan nulla sit amet congue feugiat. Phasellus id felis vitae sapien gravida consectetur. Curabitur rutrum interdum vehicula. Etiam interdum efficitur augue in dignissim. Etiam tellus diam, varius at luctus in, eleifend nec elit.
+
+            Nam et ligula viverra, pharetra nulla eu, pharetra purus. Phasellus eleifend nunc quis ipsum ullamcorper, at scelerisque magna elementum. Duis fermentum a enim at hendrerit. Integer tincidunt efficitur odio quis porta. Sed eget ornare turpis. Duis a sem ut nisi rutrum ornare tempus in quam. Donec dictum leo quis magna mollis, et pharetra turpis commodo. Ut vitae nisl eleifend, dignissim tellus malesuada, vulputate ante. Quisque tempus, ligula id luctus aliquet, libero libero gravida augue, quis congue nulla risus ut sem. Nullam pretium ullamcorper arcu, congue vestibulum tellus tincidunt at. Aliquam non pretium erat, sed hendrerit diam.
             <p><br/>
         </div>
     </div>
 </div>
+</section>
 
+
+<section id="contact">
 <!--Formulaire de contact-->
-<form id="contact" method="post" action="contact.php" role="form">
+<form method="post" action="contact.php" role="form">
 
-    <div class="messages"></div>
+    <!--<div class="messages"></div>-->
 
     <div class="controls">
         <div class="container">
             <div class="row">
-                <h1> Contact </h1>
+                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                    <hr class="hr_homepage">
+                </div>
+                </div>
+            <div class="row" align="center">
+                <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                <h1>Contact</h1><br>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 col-md-offset-3">
@@ -140,25 +142,27 @@
                         <span class="text-muted"><strong>*</strong> These fields are required</span>
                     </div>
                 <div class="col-md-12" align="center">
+                    <br>
                     <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    <br>
+                    <br>
                 </div>
             </div>
             </div>
         </div>
     </div>
-
 </form>
+</section>
 
 <!--Footer-->
 
     <div id="footer" class="container">
-
         <div class="row">
-                <div class="col-xs-6 col-md-6" class="author">
-                    <p>Wildo Codak</p>
+                <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-xs-5 col-xs-offset-1" class="author">
+                        <span class="name_footer">Wildo Codak</span>
                 </div>
-                <div class="col-xs-6 col-md-6" class="copyright">
-                    <p class="txt_copyright">©All right reserved WC 2018</p>
+                <div class="col-xs-5 col-md-5 col-lg-5 txt_copyright">
+                        <span class="txt_copyright">©All right reserved WC 2018</span>
                 </div>
         </div>
     </div>
