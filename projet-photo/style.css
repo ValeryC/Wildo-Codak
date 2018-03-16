@@ -72,7 +72,7 @@ p{
 
 /* BUTTONS */
 
-.btn {
+.btn_pages {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -85,16 +85,15 @@ p{
     width: 140px;
     height: 40px;
     text-transform: uppercase;
-    padding-top: 10px;
 }
 
-.btn:hover {
+.btn_pages:hover {
     background-color: black;
     border: 1px solid black;
     color: white;
 }
 
-.btn:active {
+.btn_pages:active {
     background-color: black;
     border: 1px solid black;
     color: white;
@@ -132,6 +131,11 @@ p{
         .my-nav .navbar-nav a{
             color: white !important;
         }
+
+        .my-nav .navbar-nav a:hover{
+            color:white !important;
+            background-color:rgba(255, 255, 255, 0.05) !important;
+        }
         .navbar-brand {
             color: white !important;
         }
@@ -140,9 +144,9 @@ p{
             background-color: rgba(0, 0, 0, 0.8);
         }
 
-        .nnopadding_margin {
-            padding: 0px;
-            margin: 0px;
+        .nopadding_margin {
+            padding: 0;
+            margin: 0;
         }
 
         .block_icons {
@@ -157,6 +161,9 @@ p{
             margin: 7px;
         }
 
+        .page_active {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
 
 /* FOOTER */
 
@@ -370,13 +377,12 @@ p{
 
             }
 
-            .icons_AboutMe {
-                color: black;
-                font-size: 30px;
-                margin-left: 7px;
-                margin-right: 7px;
 
+            .zone_AboutMeCenter {
+                display: flex;
+                align-items: center;
             }
+
 
         /* CONTENT SECTION CONTACT */
 
@@ -385,6 +391,7 @@ p{
                 background-color: black;
                 border: none;
                 width: 100%;
+                margin: 0;
             }
 
             #contact {
@@ -443,13 +450,25 @@ p{
     font-weight: 400;
     text-align: center;
     background-color: transparent; 
-    border-radius: 0px;
+    border-radius: 0;
     color: black;
-
-
     text-transform: uppercase;
 
+
         }
+
+        .nav-pills>li>a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 0;
+        }
+        .nav-pills>li>a, .nav-pills>li>a:focus, {
+            background-color:transparent);
+            border-radius: 0;
+        }
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0;
+    }
 
         .portfolio-nav > li > a {
             font-size: 20px;
